@@ -3,7 +3,6 @@ import React from "react";
 import { View, Text, StyleSheet, StatusBar } from "react-native";
 import { colors } from "./source/global/styles.js";
 
-import SignInWelcomeScreen from "./source/screens/authScreens/SignInWelcomeScreen.js";
 import RootNavigator from './source/navigation/RootNavigators.js'
 
 export default function App() {

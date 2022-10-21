@@ -7,7 +7,7 @@ import * as Animatable from "react-native-animatable";
 
 import Header from "../../components/header.js";
 
-export default function SignInScreen() {
+export default function SignInScreen({navigation}) {
   const [textInput2Focussed, setTextInput2Focussed] = useState(false);
 
   const textInput1 = useRef(1);
@@ -74,6 +74,7 @@ export default function SignInScreen() {
           title="SIGN-IN"
           buttonStyle={parameters.styledButton}
           titleStyle={parameters.buttonTitle}
+          onPress = {() => {navigation.navigate("HomeScreen")}}
         />
       </View>
 
